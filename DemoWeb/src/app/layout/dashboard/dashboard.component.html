@@ -1,8 +1,44 @@
 <div [@routerTransition]>
-    <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
-    <div class="row">
-        <div class="col-md-12">
-            <ngb-carousel>
+    <!-- <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2> -->
+    <div class="row" style="font-size: 12px;">
+        <div class="col-md-4">
+            <h3>Các line vận hành</h3>
+            <div class="row">
+                <div style="margin-left: 15px;background-color: #F88962;width: 2rem;display: block;border-radius: .125rem;height: 2rem;">
+                    <img src="assets/images/lead_120.png" width="30px" />
+                </div>
+                <div style="margin-left: 10px">
+                    Các line đang vận hành<br/> Tổng số lượng:57
+                </div>
+            </div>
+            <table _ngcontent-c4="" class="table" style="margin-top:6px;">
+                <!-- <thead _ngcontent-c4="" class="thead-inverse">
+                    <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">#</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">First Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Last Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Username</th>
+                    </tr>
+                </thead> -->
+                <tbody _ngcontent-c4="" class="ng-tns-c4-0">
+                    <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                        <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">Line 3</th>
+                        <td _ngcontent-c4="" class="ng-tns-c4-0">Upper</td>
+                        <td _ngcontent-c4="" class="ng-tns-c4-0">Product type1</td>
+                        <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#"> Active</a></td>
+                    </tr>
+                    <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                        <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">Line 3</th>
+                        <td _ngcontent-c4="" class="ng-tns-c4-0">Lasted Upper</td>
+                        <td _ngcontent-c4="" class="ng-tns-c4-0">Product type5</td>
+                        <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#">Active</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center;">
+                <a href="#">(View All)</a>
+            </div>
+            <!-- <ngb-carousel>
                 <ng-template ngbSlide *ngFor="let slider of sliders">
                     <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
                     <div class="carousel-caption">
@@ -10,54 +46,107 @@
                         <p>{{slider.text}}</p>
                     </div>
                 </ng-template>
-            </ngb-carousel>
+            </ngb-carousel> -->
         </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'primary'" [icon]="'fa-comments'" [count]="26" [label]="'New Comments!'" ></app-stat>
-        </div>
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'warning'" [icon]="'fa-tasks'" [count]="12" [label]="'New task!'" ></app-stat>
-        </div>
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'success'" [icon]="'fa-shopping-cart'" [count]="124" [label]="'New Orders!'" ></app-stat>
-        </div>
-        <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'danger'" [icon]="'fa-support'" [count]="13" [label]="'New Tickets!'"></app-stat>
-        </div>
-    </div>
-    <hr />
-    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
-    <hr />
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="card card-default">
-                <div class="card-header">
-                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+        <div class="col-md-4">
+            <div style="height: 200px;">
+                <h3>Today's Events</h3>
+                <table _ngcontent-c4="" class="table" style="margin-top: 50px;">
+                    <!-- <thead _ngcontent-c4="" class="thead-inverse">
+                    <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">#</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">First Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Last Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Username</th>
+                    </tr>
+                </thead> -->
+                    <tbody _ngcontent-c4="" class="ng-tns-c4-0">
+                        <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                            <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">Họp ban giám đốc</th>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">Phòng A</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">10AM 10/10/2018</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#">Đang chờ</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align: center;">
+                    <a href="#">(View All)</a>`
                 </div>
-                <!-- /.card-header -->
-                <app-timeline></app-timeline>
-                <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-4">
-            <div class="card card-default mb-3">
-                <div class="card-header">
-                    <i class="fa fa-bell fa-fw"></i> Notifications card
+            <div style="height: 200px;">
+                <h3 style="margin-top: 50px;">Today's Tasks</h3>
+                <table _ngcontent-c4="" class="table" style="margin-top: 50px;">
+                    <!-- <thead _ngcontent-c4="" class="thead-inverse">
+                    <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">#</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">First Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Last Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Username</th>
+                    </tr>
+                </thead> -->
+                    <tbody _ngcontent-c4="" class="ng-tns-c4-0">
+                        <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                            <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">Duyệt hồ sơ ngừng Line 3</th>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">10AM 10/10/2018</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#">Đã hoàn thành</a></td>
+                        </tr>
+                        <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                            <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">Kiểm tra sự cố Line 5,Lasted upper</th>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">10AM 10/10/2018</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#">Đã hoàn thành</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align: center;">
+                    <a href="#">(View All)</a>
                 </div>
-                <!-- /.card-header -->
-                <app-notification></app-notification>
-                <!-- /.card-body -->
             </div>
-            <!-- /.card -->
-
-            <app-chat></app-chat>
-            <!-- /.card .chat-card -->
         </div>
-        <!-- /.col-lg-4 -->
+        <div class="col-md-4">
+            <div style="height: 250px;">
+                <h3>Assistant</h3>
+                <div class="row">
+                    <div style="margin-left: 10px">
+                        Vận động 5 phút<br/> Nhắc mội người trong phòng không ồn ào <br/> Nhắc mọi người xem và duyệt app
+                    </div>
+                </div>
+            </div>
+            <div style="height: 200px;">
+                <h3>Recent Records</h3>
+                <table _ngcontent-c4="" class="table" style="margin-top: 50px;">
+                    <!-- <thead _ngcontent-c4="" class="thead-inverse">
+                    <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">#</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">First Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Last Name</th>
+                        <th _ngcontent-c4="" class="ng-tns-c4-0">Username</th>
+                    </tr>
+                </thead> -->
+                    <tbody _ngcontent-c4="" class="ng-tns-c4-0">
+                        <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                            <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">Edit</th>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">Bugs</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">123456</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#">08/10/2018</a></td>
+                        </tr>
+                        <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                            <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">New</th>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">Product Type</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">123457</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#">08/10/2018</a></td>
+                        </tr>
+                        <tr _ngcontent-c4="" class="ng-tns-c4-0">
+                            <th _ngcontent-c4="" class="ng-tns-c4-0" scope="row">Stop</th>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">Line</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0">123458</td>
+                            <td _ngcontent-c4="" class="ng-tns-c4-0"><a href="#">09/10/2018</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align: center;">
+                    <a href="#">(View All)</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
