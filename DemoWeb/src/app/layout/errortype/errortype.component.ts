@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { routerTransition } from '../../router.animations';
+import { ModalDirective, TooltipModule } from 'ngx-bootstrap';
 
 @Component({
     selector: 'app-errortype',
@@ -9,6 +10,7 @@ import { routerTransition } from '../../router.animations';
 })
 export class ErrortypeComponent implements OnInit {
     constructor() {}
+    @ViewChild('popMsg') public popMsg: ModalDirective;
 
     ngOnInit() {}
 }
