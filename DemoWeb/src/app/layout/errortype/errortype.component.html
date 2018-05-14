@@ -1,8 +1,12 @@
 <div [@routerTransition]>
-    <app-page-header [heading]="'Error Type'" [icon]="'fa-edit'"></app-page-header>
+    <app-page-header [heading]="'Error'" [icon]="'fa-edit'"></app-page-header>
 
     <div class="row">
         <div class="col col-lg-12">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary btn-block" (click)="AlertModal.show();">Add Error</button>
+            </div>
+
             <div class="card mb-3">
                 <div class="card-header">
                     Error
@@ -16,7 +20,7 @@
                                 <th>Status</th>
                                 <th>Date</th>
                                 <th>User</th>
-                                <th style="width: 10%"></th>
+                                <th style="width: 10%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -28,9 +32,9 @@
                                 <td>Ms Ngân</td>
                                 <td>
                                     <div ngbDropdown class="d-inline-block dropdown">
-                                        <button class="btn btn-outline-primary" ngbDropdownToggle>Action</button>
+                                        <button class="btn btn-outline-primary" ngbDropdownToggle></button>
                                         <div ngbDropdownMenu>
-                                            <button class="dropdown-item">Edit</button>
+                                            <button class="dropdown-item" [routerLink]="['/errordetail']">Edit</button>
                                             <button class="dropdown-item">View</button>
                                             <button class="dropdown-item">Clone</button>
                                         </div>
@@ -45,9 +49,9 @@
                                 <td>Ms Ngân</td>
                                 <td>
                                     <div ngbDropdown class="d-inline-block dropdown">
-                                        <button class="btn btn-outline-primary" ngbDropdownToggle>Action</button>
+                                        <button class="btn btn-outline-primary" ngbDropdownToggle></button>
                                         <div ngbDropdownMenu>
-                                            <button class="dropdown-item">Edit</button>
+                                            <button class="dropdown-item" [routerLink]="['/errordetail']">Edit</button>
                                             <button class="dropdown-item">View</button>
                                             <button class="dropdown-item">Clone</button>
                                         </div>
@@ -62,9 +66,9 @@
                                 <td>Ms Ngân</td>
                                 <td>
                                     <div ngbDropdown class="d-inline-block dropdown">
-                                        <button class="btn btn-outline-primary" ngbDropdownToggle>Action</button>
+                                        <button class="btn btn-outline-primary" ngbDropdownToggle></button>
                                         <div ngbDropdownMenu>
-                                            <button class="dropdown-item">Edit</button>
+                                            <button class="dropdown-item" [routerLink]="['/errordetail']">Edit</button>
                                             <button class="dropdown-item">View</button>
                                             <button class="dropdown-item">Clone</button>
                                         </div>
@@ -79,9 +83,9 @@
                                 <td>Ms Ngân</td>
                                 <td>
                                     <div ngbDropdown class="d-inline-block dropdown">
-                                        <button class="btn btn-outline-primary" ngbDropdownToggle>Action</button>
+                                        <button class="btn btn-outline-primary" ngbDropdownToggle></button>
                                         <div ngbDropdownMenu>
-                                            <button class="dropdown-item">Edit</button>
+                                            <button class="dropdown-item" [routerLink]="['/errordetail']">Edit</button>
                                             <button class="dropdown-item">View</button>
                                             <button class="dropdown-item">Clone</button>
                                         </div>
@@ -96,9 +100,9 @@
                                 <td>Ms Ngân</td>
                                 <td>
                                     <div ngbDropdown class="d-inline-block dropdown">
-                                        <button class="btn btn-outline-primary" ngbDropdownToggle>Action</button>
+                                        <button class="btn btn-outline-primary" ngbDropdownToggle></button>
                                         <div ngbDropdownMenu>
-                                            <button class="dropdown-item">Edit</button>
+                                            <button class="dropdown-item" [routerLink]="['/errordetail']">Edit</button>
                                             <button class="dropdown-item">View</button>
                                             <button class="dropdown-item">Clone</button>
                                         </div>
@@ -196,16 +200,119 @@
     <div class="modal-dialog modelAlert modal-lgg" role="document">
         <div class="modal-content">
             <div class="modal-header" style="background-color:#dddddd ">
-                <h4 class="modal-title">Confirm</h4>
-                <!-- <button type="button" class="close" (click)="a1EModal.hide()" aria-label="Close">
+                <h4 class="modal-title">Add Error</h4>
+                <button type="button" class="close" (click)="AlertModal.hide()" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button> -->
+                        </button>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div style="text-align: center">
-                            <strong>Are you sure, you want to close?</strong>
+                <div class="row card">
+                    <div class="col col-lg-12 card-body">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Error Name</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Location Product</strong>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <select name="" id="">
+                                                    <option value="">Vùng 1</option>
+                                                    <option value="">Vùng 2</option>
+                                                    <option value="">Vùng 3</option>
+                                                    <option value="">Vùng 4</option>
+                                                </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <img src="./assets/images/giay.jpg" width="250px" />
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Create By</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        Ms Ngân
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Approved By</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        Mr Tùng
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Error Phare</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" name="firstName" value="Upper" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Status</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <select>
+                                                <option>Active </option>
+                                                <option>Inactive </option>                           
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="height: 165px">
+                                    <div class="col-md-4">
+                                    </div>
+                                    <div class="col-md-8">
+
+                                    </div>
+                                </div>
+                                <!-- <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Create Time</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        20/06/2018
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <strong>Approved Time</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        20/06/2018
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,10 +321,10 @@
                     <div class="row">
                         <div class="col-md-3"> </div>
                         <div class="col-md-3">
-                            <button type="button" class="btn btn-primary btn-block" (click)="AlertModal.hide();">Yes</button>
+                            <button type="button" class="btn btn-primary btn-block" (click)="AlertModal.hide();">Add</button>
                         </div>
                         <div class="col-md-3">
-                            <button type="button" class="btn btn-block" (click)="AlertModal.hide();">No</button>
+                            <button type="button" class="btn btn-block" (click)="AlertModal.hide();">Cancel</button>
                         </div>
                         <div class="col-md-3"> </div>
                     </div>
