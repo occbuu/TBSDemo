@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { routerTransition } from '../../router.animations';
 import { ModalDirective, TooltipModule } from 'ngx-bootstrap';
+import { DropdownComponent } from '../bs-component/components';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
     selector: 'app-errortype',

@@ -1,4 +1,4 @@
-$topnav-background-color: #222;
+$topnav-background-color: rgb(35, 233, 84);
 :host {
     display: block;
 }
@@ -10,7 +10,9 @@ $topnav-background-color: #222;
     right: 0;
     bottom: 0;
     overflow: auto;
-    background: $topnav-background-color;
+    // background: $topnav-background-color;
+    background-image: url(./../../assets/images/bambo.jpg);
+    background-repeat: no-repeat;
     text-align: center;
     color: #fff;
     padding: 3em;

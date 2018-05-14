@@ -1,4 +1,5 @@
 import { ErrortypeModule } from './errortype.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 describe('ErrortypeModule', () => {
     let formModule: ErrortypeModule;
