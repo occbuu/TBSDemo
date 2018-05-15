@@ -11,7 +11,7 @@
                             <span class="text-danger">*</span>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" value="Giày Nike" />
+                            <input type="text" class="form-control" value="" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -22,33 +22,34 @@
                             <img src="./assets/images/giay.jpg" width="250px" />
                         </div>
                     </div>
+
                     <div class="form-group row">
-                        <div class="col-md-4">
-                            <strong>Create By</strong>
-                            <span class="text-danger">*</span>
+                        <div class="col-md-12">
+                            <strong>Select Error for Product</strong>
                         </div>
-                        <div class="col-md-8">
-                            Ms Ngân
-                        </div>
+
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4">
-                            <strong>Approved By</strong>
-                            <span class="text-danger">*</span>
-                        </div>
                         <div class="col-md-8">
-                            Mr Tùng
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-success" type="button" (click)="ErrorModal.show();"><i class="fa fa-magic"></i>&nbsp; Error</button>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-md-6">
                     <div class="form-group row">
                         <div class="col-md-4">
+                            <strong>Product Brand</strong>
+                            <span class="text-danger">*</span>
                         </div>
-                        <div class="col-md-4">
-                            <button type="button" class="btn btn-primary btn-block" (click)="ErrorModal.show();">Add Error</button>
-                        </div>
-                        <div class="col-md-4">
+                        <div class="col-md-8">
+                            <select>
+                                            <option>Nike </option>
+                                            <option>Adidas </option> 
+                                            <option>Biti's </option>                                  
+                                        </select>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -58,16 +59,20 @@
                         </div>
                         <div class="col-md-8">
                             <select>
-                            <option>Active </option>
-                            <option>Inactive </option>                           
-                        </select>
+                                        <option>Draft </option>
+                                        <option>Pending </option>     
+                                        <option>Active </option>
+                                        <option>Inactive </option>
+                                        <option>Reopen </option>                      
+                                    </select>
                         </div>
                     </div>
-                    <div class="form-group row" style="height: 120px">
+                    <div class="form-group row">
                         <div class="col-md-4">
+                            <strong>Created By</strong>
                         </div>
                         <div class="col-md-8">
-
+                            Ms Ngân
                         </div>
                     </div>
                     <div class="form-group row">
@@ -81,11 +86,14 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-md-4">
-                            <strong>Approved Time</strong>
+                            <strong>Approved By</strong>
                             <span class="text-danger">*</span>
                         </div>
                         <div class="col-md-8">
-                            20/06/2018
+                            <select>
+                                            <option>Mr Tùng </option>
+                                            <option>Ms Ngân</option>     
+                                        </select>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -93,11 +101,22 @@
 
                         </div>
                         <div class="col-md-4">
-                            <button class="button btn-block" [routerLink]="['/errortype']">Back</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-md-4"> </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-outline-secondary" type="button" [routerLink]="['/product']"> <i class="fa fa-lightbulb-o"></i>Back</button>
+            </div>
+            <div class="col-md-4"> </div>
         </div>
     </div>
     <!-- /.row -->
@@ -107,10 +126,10 @@
     <div class="modal-dialog modelAlert modal-lgg" role="document">
         <div class="modal-content">
             <div class="modal-header" style="background-color:#dddddd ">
-                <h4 class="modal-title">Add Error</h4>
+                <h4 class="modal-title">Check and Add Error</h4>
                 <button type="button" class="close" (click)="ErrorModal.hide()" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
             </div>
             <div class="modal-body">
                 <div class="row card">
@@ -133,8 +152,8 @@
                                                     <td>Upper</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -142,8 +161,8 @@
                                                     <td>Upper</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -152,8 +171,8 @@
 
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -161,8 +180,8 @@
                                                     <td>Finish</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value=""> 
-                                                        </label>
+                                                                <input type="checkbox" value=""> 
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -170,8 +189,8 @@
                                                     <td>Upper</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value=""> 
-                                                        </label>
+                                                                <input type="checkbox" value=""> 
+                                                            </label>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -194,8 +213,8 @@
                                                     <td>Lastd Upper</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -203,8 +222,8 @@
                                                     <td>Lastd Upper</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -213,8 +232,8 @@
 
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -222,8 +241,8 @@
                                                     <td>Lastd Upper</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value=""> 
-                                                        </label>
+                                                                <input type="checkbox" value=""> 
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -231,8 +250,8 @@
                                                     <td>Lastd Upper</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value=""> 
-                                                        </label>
+                                                                <input type="checkbox" value=""> 
+                                                            </label>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -255,8 +274,8 @@
                                                     <td>Finish</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -264,8 +283,8 @@
                                                     <td>Finish</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -274,8 +293,8 @@
 
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value="">
-                                                        </label>
+                                                                <input type="checkbox" value="">
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -283,8 +302,8 @@
                                                     <td>Finish</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value=""> 
-                                                        </label>
+                                                                <input type="checkbox" value=""> 
+                                                            </label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -292,8 +311,8 @@
                                                     <td>Finish</td>
                                                     <td>
                                                         <label>
-                                                            <input type="checkbox" value=""> 
-                                                        </label>
+                                                                <input type="checkbox" value=""> 
+                                                            </label>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -305,15 +324,15 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-3"> </div>
-                        <div class="col-md-3">
-                            <button type="button" class="btn btn-primary btn-block" (click)="ErrorModal.hide(); AlertModal.show();">OK</button>
+                    <div class="row" style="padding-top: 20px;">
+                        <div class="col-md-4"> </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-outline-success" type="button" (click)="ErrorModal.hide(); AlertModal.show();"><i class="fa fa-magic"></i>&nbsp; OK</button>
                         </div>
-                        <div class="col-md-3">
-                            <button type="button" class="btn btn-block" (click)="ErrorModal.hide(); AlertModal.show();">Cancel</button>
+                        <div class="col-md-2">
+                            <button class="btn btn-outline-secondary" type="button" (click)="ErrorModal.hide(); AlertModal.show();"> <i class="fa fa-lightbulb-o"></i>Cancel</button>
                         </div>
-                        <div class="col-md-3"> </div>
+                        <div class="col-md-4"> </div>
                     </div>
                 </div>
             </div>
