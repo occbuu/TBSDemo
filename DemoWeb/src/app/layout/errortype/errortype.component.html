@@ -3,13 +3,13 @@
 
     <div class="row">
         <div class="col col-lg-12">
-            <div class="col-md-2">
-                <button type="button" class="btn btn-primary btn-block" (click)="AlertModal.show();">Add Error</button>
-            </div>
-
             <div class="card mb-3">
                 <div class="card-header">
-                    Error
+                    <div class="col-md-12">
+                        <div class="col-md-2" style="float:right;">
+                            <button class="btn btn-outline-primary" (click)="AlertModal.show();" type="button"><i class="fa fa-star"></i>&nbsp; Add Error</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body table-responsive">
                     <table class="table table-error table-bordered table-striped table-sm">
@@ -319,14 +319,15 @@
 
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-md-3"> </div>
-                        <div class="col-md-3">
-                            <button type="button" class="btn btn-primary btn-block" (click)="AlertModal.hide();">Add</button>
+                        <div class="col-md-4"> </div>
+                        <div class="col-md-2">
+
+                            <button class="btn btn-outline-success" type="button" (click)="AlertModal.hide();"><i class="fa fa-magic"></i>&nbsp; Add</button>
                         </div>
-                        <div class="col-md-3">
-                            <button type="button" class="btn btn-block" (click)="AlertModal.hide();">Cancel</button>
+                        <div class="col-md-2">
+                            <button class="btn btn-outline-secondary" type="button" (click)="AlertModal.hide();"> <i class="fa fa-lightbulb-o"></i>Cancel</button>
                         </div>
-                        <div class="col-md-3"> </div>
+                        <div class="col-md-4"> </div>
                     </div>
                 </div>
             </div>
