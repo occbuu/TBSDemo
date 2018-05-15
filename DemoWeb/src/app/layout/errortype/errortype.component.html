@@ -7,7 +7,7 @@
                 <div class="card-header">
                     <div class="col-md-12">
                         <div class="col-md-2" style="float:right;">
-                            <button class="btn btn-outline-primary" (click)="AlertModal.show();" type="button"><i class="fa fa-star"></i>&nbsp; Add Error</button>
+                            <button class="btn btn-outline-primary" (click)="AlertModal.show();" type="button"><i class="fa fa-plus"></i>&nbsp; Add Error</button>
                         </div>
                     </div>
                 </div>
@@ -15,16 +15,20 @@
                     <table class="table table-error table-bordered table-striped table-sm">
                         <thead>
                             <tr>
-                                <th>Bug Name</th>
-                                <th>Error Type</th>
+                                <th>#</th>
+                                <th>Error Id</th>
+                                <th>Error Name</th>
+                                <th>Manufacturing Phrase</th>
                                 <th>Status</th>
-                                <th>Date</th>
+                                <th>Created Date</th>
                                 <th>User</th>
                                 <th style="width: 10%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td>1</td>
+                                <td>Err001</td>
                                 <th scope="row">Lệch mũi/gót</th>
                                 <td>Lasted upper</td>
                                 <td> <span class="badge badge-success">Active</span></td>
@@ -42,6 +46,8 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>2</td>
+                                <td>Err002</td>
                                 <th scope="row">Dơ, không cắt chỉ</th>
                                 <td>Finish</td>
                                 <td> <span class="badge badge-success">Active</span></td>
@@ -59,6 +65,8 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>3</td>
+                                <td>Err003</td>
                                 <th scope="row">Hở keo</th>
                                 <td>Finish</td>
                                 <td> <span class="badge badge-success">Active</span></td>
@@ -76,6 +84,8 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>4</td>
+                                <td>Err004</td>
                                 <th scope="row">Cao keo, hở đường mài</th>
                                 <td>Finish</td>
                                 <td> <span class="badge badge-success">Active</span></td>
@@ -93,6 +103,8 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>4</td>
+                                <td>Err004</td>
                                 <th scope="row">Cao thấp mũi, gót</th>
                                 <td>Finish</td>
                                 <td> <span class="badge badge-success">Active</span></td>
@@ -212,6 +224,15 @@
                             <div class="col-md-6 ">
                                 <div class="form-group row">
                                     <div class="col-md-4">
+                                        <strong>Error ID</strong>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-4">
                                         <strong>Error Name</strong>
                                         <span class="text-danger">*</span>
                                     </div>
@@ -224,12 +245,19 @@
                                         <strong>Location Product</strong>
                                     </div>
                                     <div class="col-md-8">
-                                        <select name="" id="">
-                                                    <option value="">Vùng 1</option>
+                                        <select _ngcontent-c21="" class="form-control">
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Vùng 1</option>
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Vùng 2</option>
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Vùng 3</option>
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Vùng 4</option>
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Vùng5</option>
+                                                </select>
+                                        <!-- <select name="" id="">
+                                                    <option value=""> 1</option>
                                                     <option value="">Vùng 2</option>
                                                     <option value="">Vùng 3</option>
                                                     <option value="">Vùng 4</option>
-                                                </select>
+                                                </select> -->
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -261,11 +289,15 @@
                             <div class="col-md-6">
                                 <div class="form-group row">
                                     <div class="col-md-4">
-                                        <strong>Error Phare</strong>
+                                        <strong>Product Phare</strong>
                                         <span class="text-danger">*</span>
                                     </div>
                                     <div class="col-md-8">
-                                        <input type="text" class="form-control" name="firstName" value="Upper" required>
+                                        <select _ngcontent-c21="" class="form-control">
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Upper</option>
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Lasted Upper</option>
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Finish</option>
+                                                </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -274,10 +306,12 @@
                                         <span class="text-danger">*</span>
                                     </div>
                                     <div class="col-md-8">
-                                        <select>
-                                                <option>Active </option>
-                                                <option>Inactive </option>                           
-                                            </select>
+                                        <select _ngcontent-c21="" class="form-control">
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Active</option>
+                                                    <option _ngcontent-c21="" class="ng-tns-c21-1">Inactive</option>
+                                                   
+                                                </select>
+
                                     </div>
                                 </div>
                                 <div class="form-group row" style="height: 165px">
