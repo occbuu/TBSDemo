@@ -12,6 +12,7 @@ const routes: Routes = [
             { path: 'errortype', loadChildren: './errortype/errortype.module#ErrortypeModule' },
             { path: 'errordetail', loadChildren: './errordetail/errordetail.module#ErrordetailModule' },
             { path: 'product', loadChildren: './product/product.module#ProductModule' },
+            { path: 'productdetail', loadChildren: './productdetail/productdetail.module#ProductdetailModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
             { path: 'forms', loadChildren: './form/form.module#FormModule' },
