@@ -37,7 +37,7 @@
                         <a [routerLink]="['/announce']" [routerLinkActive]="['router-link-active']">
                             <span>
                                             <i class="fa fa-bullhorn"></i>&nbsp;
-                                            {{ 'Announce' | translate }}
+                                            {{ 'Announce Template' | translate }}
                                         </span>
                         </a>
                     </li>
@@ -52,27 +52,19 @@
             <li class="nested" [class.expand]="showMenu === 'lines'">
                 <ul class="submenu">
                     <li>
-                        <a [routerLink]="['/errortype']" [routerLinkActive]="['router-link-active']">
+                        <a [routerLink]="['/addline']" [routerLinkActive]="['router-link-active']">
                             <span>
-                                    <i class="fa fa-bug"></i>&nbsp;
-                                    {{ 'Error' | translate }}
+                                    <i class="fa fa-calendar"></i>&nbsp;
+                                    {{ 'Add Line' | translate }}
                                 </span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLink]="['/product']" [routerLinkActive]="['router-link-active']">
+                        <a [routerLink]="['/viewline']" [routerLinkActive]="['router-link-active']">
                             <span>
-                                        <i class="fa fa-product-hunt"></i>&nbsp;
-                                        {{ 'Product' | translate }}
+                                        <i class="fa fa-plus-square"></i>&nbsp;
+                                        {{ 'View Lines' | translate }}
                                     </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a [routerLink]="['/rule']" [routerLinkActive]="['router-link-active']">
-                            <span>
-                                            <i class="fa fa-toggle-on"></i>&nbsp;
-                                            {{ 'Rules' | translate }}
-                                        </span>
                         </a>
                     </li>
                 </ul>
@@ -85,7 +77,7 @@
             <li class="nested" [class.expand]="showMenu === 'rpt'">
                 <ul class="submenu">
                     <li>
-                        <a [routerLink]="['/errortype']" [routerLinkActive]="['router-link-active']">
+                        <a [routerLink]="['/prorpt']" [routerLinkActive]="['router-link-active']">
                             <span>
                                         <i class="fa fa-file-o"></i>&nbsp;
                                         {{ 'Product report' | translate }}
@@ -93,11 +85,36 @@
                         </a>
                     </li>
                     <li>
-                        <a [routerLink]="['/product']" [routerLinkActive]="['router-link-active']">
+                        <a [routerLink]="['/errrpt']" [routerLinkActive]="['router-link-active']">
                             <span>
                                             <i class="fa fa-file-o"></i>&nbsp;
                                             {{ 'Error Report' | translate }}
                                         </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('noti')">
+                <span><i class="fa fa-bell"></i>&nbsp;{{ 'Notification' | translate }}</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'noti'">
+                <ul class="submenu">
+                    <li>
+                        <a [routerLink]="['/notiadd']" [routerLinkActive]="['router-link-active']">
+                            <span>
+                                            <i class="fa fa-paper-plane"></i>&nbsp;
+                                            {{ 'Add Notification' | translate }}
+                                        </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/notiview']" [routerLinkActive]="['router-link-active']">
+                            <span>
+                                                <i class="fa fa-bell-o"></i>&nbsp;
+                                                {{ 'Notifications History' | translate }}
+                                            </span>
                         </a>
                     </li>
                 </ul>
@@ -118,7 +135,7 @@
                         </a>
                     </li>
                     <li>
-                        <a [routerLink]="['/setting']" [routerLinkActive]="['router-link-active']">
+                        <a [routerLink]="['/userrole']" [routerLinkActive]="['router-link-active']">
                             <span>
                                                     <i class="fa fa-cog"></i>&nbsp;
                                                     {{ 'User roles' | translate }}
@@ -126,7 +143,7 @@
                         </a>
                     </li>
                     <li>
-                        <a [routerLink]="['/setting']" [routerLinkActive]="['router-link-active']">
+                        <a [routerLink]="['/syssetting']" [routerLinkActive]="['router-link-active']">
                             <span>
                                                 <i class="fa fa-cog"></i>&nbsp;
                                                 {{ 'System settings' | translate }}
@@ -219,7 +236,7 @@
                     <ul class="submenu">
                         <li>
                             <a href="javascript:void(0)">
-                                <span><i class="fa fa-fw fa-user"></i> {{ 'Profile' | translate }}</span>
+                                <span><i class="fa fa-fw fa-user"></i> {{ 'Profile 1' | translate }}</span>
                             </a>
                         </li>
                         <li>
