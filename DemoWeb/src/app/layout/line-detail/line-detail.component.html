@@ -1,11 +1,55 @@
 <div [@routerTransition]>
     <app-page-header [heading]="'View Line Detail'" [icon]="'fa-edit'"></app-page-header>
+    <small>Information is captured at [2018-05-06 10:05 AM]</small>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card">
+                <div class="card-body p-3 clearfix">
+                    <i class="fa fa-cogs bg-primary p-3 font-2xl mr-3 float-left"></i>
+                    <div class="text-uppercase text-muted font-weight-bold font-xs mb-0 mt-2">Total Hours</div>
+                    <div class="h5">89</div>
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+        <div class="col-sm-6 col-lg-3">
+            <div class="card">
+                <div class="card-body p-3 clearfix">
+                    <i class="fa fa-laptop bg-info p-3 font-2xl mr-3 float-left"></i>
+                    <div class="text-uppercase text-muted font-weight-bold font-xs mb-0 mt-2">Total output</div>
+                    <div class="h5">7.089</div>
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
 
+        <div class="col-sm-6 col-lg-3">
+            <div class="card">
+                <div class="card-body p-3 clearfix">
+                    <i class="fa fa-moon-o bg-warning p-3 font-2xl mr-3 float-left"></i>
+                    <div class="text-uppercase text-muted font-weight-bold font-xs mb-0 mt-2">Bad output</div>
+                    <div class="h5">99</div>
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
 
-
+        <div class="col-sm-6 col-lg-3">
+            <div class="card">
+                <div class="card-body p-3 clearfix">
+                    <i class="fa fa-bell bg-danger p-3 font-2xl mr-3 float-left"></i>
+                    <div class="text-uppercase text-muted font-weight-bold font-xs mb-0 mt-2">Destroyed</div>
+                    <div class="h5">10</div>
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+    </div>
+    <!--/.row-->
+    <br>
     <div class="card">
         <div class="card-header">
-            Timeline of [TBS-01-01] <small>(Sckecher LIne of AB)</small>
+            <i class="fa fa-info-circle"> </i> Timeline of [TBS-01-01] <small>(Sckecher LIne of AB)</small>
         </div>
         <div class="card-body">
             <div class="container">
@@ -19,11 +63,12 @@
                                         <div class="timeline-heading">
                                             <h4 class="timeline-title">Line Creation</h4>
                                             <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-01 10:01 AM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
                                         </div>
                                         <div class="timeline-body">
                                             <p>Line was created by <strong>[Ngan Nguyen]</strong>.</p>
                                         </div>
-                                        <button class="btn btn-link link-more" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
+
                                     </div>
                                 </li>
                                 <li class="timeline-item">
@@ -32,6 +77,7 @@
                                         <div class="timeline-heading">
                                             <h4 class="timeline-title">Line Approval</h4>
                                             <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-01 02:36 PM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
                                         </div>
                                         <div class="timeline-body">
                                             <p>Line was approved by <strong>[Ngan Nguyen]</strong>.</p>
@@ -39,50 +85,93 @@
                                     </div>
                                 </li>
                                 <li class="timeline-item">
-                                    <div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
+                                    <div class="timeline-badge info"><i class="fa fa-check"></i></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Mussum ipsum cacilds 3</h4>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                                            <h4 class="timeline-title">Begin manufacturing</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-02 08:00 AM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
                                         </div>
                                         <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipisci. Mé faiz elementum girarzis, nisi eros gostis.</p>
+                                            <p>Line is begun to run.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="timeline-item">
-                                    <div class="timeline-badge danger"><i class="glyphicon glyphicon-check"></i></div>
+                                    <div class="timeline-badge info"><i class="fa fa-check"></i></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Mussum ipsum cacilds 4</h4>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                                            <h4 class="timeline-title">Manufacturing</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-03 08:00 AM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
                                         </div>
                                         <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                            <p>Line is running.</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="timeline-item">
-                                    <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+                                    <div class="timeline-badge danger"><i class="fa fa-warning"></i></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Mussum ipsum cacilds 5</h4>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                                            <h4 class="timeline-title">Stop Manufacturing</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-03 03:16 PM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
                                         </div>
                                         <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                            <p>Stopped due to 10 major errors!</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="timeline-item">
-                                    <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                                    <div class="timeline-badge info"><i class="fa fa-check"></i></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <h4 class="timeline-title">Mussum ipsum cacilds 6</h4>
-                                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                                            <h4 class="timeline-title">Resume to Manufacturing</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-04 08:00 AM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
                                         </div>
                                         <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                                            <p>Resumed to run</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge warning"><i class="fa fa-question"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Change physical line</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-04 11:00 AM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>One upper line has been changed due to 20 minor errors!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge info"><i class="fa fa-check"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Manufacturing</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-05 08:00 AM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Line is running.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-badge"><i class="fa fa-check-square-o"></i></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Line ending</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 2018-05-05 06:00 PM</small></p>
+                                            <button class="btn btn-link link-more pull-right" type="button"><i class="fa fa-info"></i>&nbsp; More info</button>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Line is ended.</p>
                                         </div>
                                     </div>
                                 </li>
@@ -94,41 +183,35 @@
 
         </div>
     </div>
+
     <br>
     <div class="card">
         <div class="card-header">
-            General Information of Line <strong>#TBS-01-01</strong>
+            <i class="fa fa-desktop"></i> General Information of Line <strong>#TBS-01-01</strong>
         </div>
         <div class="card-body">
             <div class="row mb-4">
 
                 <div class="col-sm-4">
-                    <h6 class="mb-3">From:</h6>
-                    <div><strong>BootstrapMaster.com</strong></div>
-                    <div>Konopnickiej 42</div>
-                    <div>43-190 Mikolow, Poland</div>
-                    <div>Email: lukasz@bootstrapmaster.com</div>
-                    <div>Phone: +48 123 456 789</div>
+                    <div>Line code: <strong>TBS-01-01</strong></div>
+                    <div>Line name: <strong>Sckecher LIne of AB</strong></div>
+                    <div>Line status: <strong>Ended</strong></div>
                 </div>
                 <!--/.col-->
 
                 <div class="col-sm-4">
-                    <h6 class="mb-3">To:</h6>
-                    <div><strong>BootstrapMaster.com</strong></div>
-                    <div>Konopnickiej 42</div>
-                    <div>43-190 Mikolow, Poland</div>
-                    <div>Email: lukasz@bootstrapmaster.com</div>
-                    <div>Phone: +48 123 456 789</div>
+                    <div>Created Date: <strong>2018-05-01 10:00 AM</strong></div>
+                    <div>Created by: <strong>Ngan Nguyen</strong></div>
+                    <div>Modified Date: <strong>2018-05-02 10:00 AM</strong></div>
+                    <div>Modified by: <strong>Admin</strong></div>
                 </div>
                 <!--/.col-->
 
                 <div class="col-sm-4">
-                    <h6 class="mb-3">Details:</h6>
-                    <div>Invoice <strong>#90-98792</strong></div>
-                    <div>March 30, 2013</div>
-                    <div>VAT: PL9877281777</div>
-                    <div>Account Name: BootstrapMaster.com</div>
-                    <div><strong>SWIFT code: 99 8888 7777 6666 5555</strong></div>
+                    <div>Product ID <strong>#9098792</strong></div>
+                    <div>Brand: <strong>Sckecher </strong></div>
+                    <div>Target Qty: <strong>500.000 </strong></div>
+                    <div>Brand: <strong>Sckecher </strong></div>
                 </div>
                 <!--/.col-->
             </div>
@@ -139,57 +222,323 @@
     <br>
     <div class="card">
         <div class="card-header">
-            History of Line <strong>#TBS-01-01</strong>
+            <i class="fa fa-search"></i> Figures in Line <strong>#TBS-01-01</strong>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <div class="input-group datepicker-input">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="modelfd" ngbDatepicker #fd="ngbDatepicker">
+                            <button class="input-group-addon" (click)="fd.toggle()" type="button">
+                                        <!-- <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/> -->
+                                        <span class="fa fa-calendar"></span>
+                                    </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <div class="input-group datepicker-input">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="modeltd" ngbDatepicker #td="ngbDatepicker">
+                            <button class="input-group-addon" (click)="td.toggle()" type="button">
+                                                <!-- <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/> -->
+                                                <span class="fa fa-calendar"></span>
+                                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group row" style="margin-left: 1%">
+                        <button class="btn btn-outline-primary" (click)="search()" type="button">Search</button> &nbsp;
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="isSearched==true">
+                <div class="col-md-4">
+                    <h4>Upper</h4>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Output with</th>
+                                <th>Qty</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="badge badge-success">Good Quality</span></td>
+                                <td>100</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><span class="badge badge-danger">Major Error</span> </td>
+                                <td>5</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><span class="badge badge-warning">Minor Errors</span></td>
+                                <td>12</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><span class="badge badge-secondary">B-Grade</span></td>
+                                <td>3</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><span class="badge badge-secondary">C-Grade</span></td>
+                                <td>2</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th colspan="2">
+                                    15
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Upper pie chart
+                        </div>
+                        <div class="card-body">
+                            <canvas baseChart height="150px" [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                                </canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Lasted Upper</h4>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Output with</th>
+                                <th>Qty</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="badge badge-success">Good Quality</span></td>
+                                <td>100</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><span class="badge badge-danger">Major Error</span> </td>
+                                <td>5</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><span class="badge badge-warning">Minor Errors</span></td>
+                                <td>12</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><span class="badge badge-secondary">B-Grade</span></td>
+                                <td>3</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><span class="badge badge-secondary">C-Grade</span></td>
+                                <td>2</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th colspan="2">
+                                    15
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Lasted Upper pie chart
+                        </div>
+                        <div class="card-body">
+                            <canvas baseChart height="150px" [data]="pieChartData1" [labels]="pieChartLabels" [chartType]="pieChartType1" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                                    </canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Finishing</h4>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Output with</th>
+                                <th>Qty</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="badge badge-success">Good Quality</span></td>
+                                <td>100</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><span class="badge badge-danger">Major Error</span> </td>
+                                <td>5</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><span class="badge badge-warning">Minor Errors</span></td>
+                                <td>12</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><span class="badge badge-secondary">B-Grade</span></td>
+                                <td>3</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><span class="badge badge-secondary">C-Grade</span></td>
+                                <td>2</td>
+                                <td>
+                                    <button class="btn btn-outline-info btn-sm" type="button"><i class="fa fa-info"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Total</th>
+                                <th colspan="2">
+                                    15
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Finish pie chart
+                        </div>
+                        <div class="card-body">
+                            <canvas baseChart height="150px" [data]="pieChartData2" [labels]="pieChartLabels" [chartType]="pieChartType2" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+                                    </canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="card">
+        <div class="card-header">
+            <i class="fa fa-eye"></i> History of Line <strong>#TBS-01-01</strong>
         </div>
         <div class="card-body">
             <div class="table-responsive-sm">
-                <table class="table table-striped">
+                <table class="table table-striped table-log">
                     <thead>
                         <tr>
                             <th class="center">#</th>
-                            <th>Item</th>
-                            <th>Description</th>
-                            <th class="center">Quantity</th>
-                            <th class="right">Unit Cost</th>
-                            <th class="right">Total</th>
+                            <th>User</th>
+                            <th>Action</th>
+                            <th>Stamptime</th>
+                            <th>Remarks</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="center">1</td>
-                            <td class="left">Origin License</td>
-                            <td class="left">Extended License</td>
-                            <td class="center">1</td>
-                            <td class="right">$999,00</td>
-                            <td class="right">$999,00</td>
+                            <td class="left">Ngan Nguyen</td>
+                            <td class="left">Created line</td>
+                            <td>2018-05-05 10:00 AM</td>
+                            <td class="right">From local IP</td>
                         </tr>
                         <tr>
-                            <td class="center">2</td>
-                            <td class="left">Custom Services</td>
-                            <td class="left">Instalation and Customization (cost per hour)</td>
-                            <td class="center">20</td>
-                            <td class="right">$150,00</td>
-                            <td class="right">$3.000,00</td>
+                            <td class="center">1</td>
+                            <td class="left">Ngan Nguyen</td>
+                            <td class="left">Created line</td>
+                            <td>2018-05-05 10:00 AM</td>
+                            <td class="right">From local IP</td>
                         </tr>
                         <tr>
-                            <td class="center">3</td>
-                            <td class="left">Hosting</td>
-                            <td class="left">1 year subcription</td>
                             <td class="center">1</td>
-                            <td class="right">$499,00</td>
-                            <td class="right">$499,00</td>
+                            <td class="left">Ngan Nguyen</td>
+                            <td class="left">Created line</td>
+                            <td>2018-05-05 10:00 AM</td>
+                            <td class="right">From local IP</td>
                         </tr>
                         <tr>
-                            <td class="center">4</td>
-                            <td class="left">Platinum Support</td>
-                            <td class="left">1 year subcription 24/7</td>
                             <td class="center">1</td>
-                            <td class="right">$3.999,00</td>
-                            <td class="right">$3.999,00</td>
+                            <td class="left">Ngan Nguyen</td>
+                            <td class="left">Created line</td>
+                            <td>2018-05-05 10:00 AM</td>
+                            <td class="right">From local IP</td>
+                        </tr>
+                        <tr>
+                            <td class="center">1</td>
+                            <td class="left">Ngan Nguyen</td>
+                            <td class="left">Created line</td>
+                            <td>2018-05-05 10:00 AM</td>
+                            <td class="right">From local IP</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+    </div>
+
+    <div class="card-body pull-right">
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-outline-primary">Start</button>
+        <!-- Indicates a successful or positive action -->
+        <button type="button" class="btn btn-outline-success">Send Notification</button>
+        <!-- Indicates caution should be taken with this action -->
+        <button type="button" class="btn btn-outline-warning">Stop</button>
+        <!-- Indicates a dangerous or potentially negative action -->
+        <button type="button" class="btn btn-outline-danger">Delete</button>
+        <!-- Secondary, outline button -->
+        <button type="button" class="btn btn-outline-secondary">Back</button>
     </div>
 </div>
