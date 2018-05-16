@@ -18,6 +18,7 @@ const routes: Routes = [
             { path: 'addline', loadChildren: './line-new/line-new.module#LineNewModule' },
             { path: 'viewline', loadChildren: './line-view/line-view.module#LineViewModule' },
             { path: 'rule', loadChildren: './rule/rule.module#RuleModule' },
+            { path: 'ruledetail', loadChildren: './ruledetail/ruledetail.module#RuledetailModule' },
             { path: 'announce', loadChildren: './announce-template/announce-template.module#AnnounceTemplateModule' },
             { path: 'mynoti', loadChildren: './my-noti/my-noti.module#MyNotiModule' },
             { path: 'notidetail', loadChildren: './noti-detail/noti-detail.module#NotiDetailModule' },
