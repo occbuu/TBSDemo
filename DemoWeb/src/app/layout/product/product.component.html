@@ -1,6 +1,35 @@
 <div [@routerTransition]>
     <app-page-header [heading]="'Product'" [icon]="'fa-edit'"></app-page-header>
-
+    <div class="card" style="margin-top: 10px">
+        <div class="card-header" (click)="isCollapsed = !isCollapsed">
+            <i class="pull-right fa" [ngClass]="{'fa-chevron-down': isCollapsed, 'fa-chevron-up': !isCollapsed}"></i>
+            <strong>Search Criteria</strong>
+        </div>
+        <div class="card-body" [ngbCollapse]="isCollapsed">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group row col-md-8">
+                        <label class="col-md-3 col-form-label" for="select">Product Name</label>
+                        <input class="col-md-8 form-control ng-untouched ng-pristine ng-valid" name="name" ngmodel="" placeholder="Enter product name" type="text">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group row col-md-8">
+                        <label class="col-xs-12 col-12 col-md-3 col-form-label" for="select">Status</label>
+                        <select class="col-xs-12 col-12 col-md-8 form-control ng-untouched ng-pristine ng-valid">
+                            <!----><option value="-">All</option><option value="ACT">Active</option><option value="INA">Inactive</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group row" style="margin-left: 1%">
+                        <button class="btn btn-outline-primary" type="button">Search</button> &nbsp;
+                        <button class="btn btn-outline-primary" type="button">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col col-lg-12">
 
