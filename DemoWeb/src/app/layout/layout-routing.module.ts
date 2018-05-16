@@ -27,6 +27,7 @@ const routes: Routes = [
             { path: 'userrole', loadChildren: './role/role.module#RoleModule' },
             { path: 'syssetting', loadChildren: './setting/setting.module#SettingModule' },
             { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
+            { path: 'changepass', loadChildren: './changepass/changepass.module#ChangepassModule' },
             { path: 'mysetting', loadChildren: './my-setting/my-setting.module#MySettingModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },

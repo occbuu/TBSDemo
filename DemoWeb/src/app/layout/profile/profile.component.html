@@ -13,7 +13,7 @@
                             <span class="text-danger">*</span>
                         </div>
                         <div class="col-md-8">
-                            <input class="form-control ng-untouched ng-pristine ng-valid" name="firstName" required="" type="text">
+                            <input class="form-control ng-untouched ng-pristine ng-valid" name="firstName" required="" value="Khánh" type="text">
                             <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error" data-for="firstName" data-valmsg-for="firstName" id="firstname_validationMessage" role="alert" hidden="">
                                 <i class="fa fa-exclamation-triangle"></i> Required!
                             </span>
@@ -25,7 +25,7 @@
                             <span class="text-danger">*</span>
                         </div>
                         <div class="col-md-8">
-                            <input class="form-control ng-untouched ng-pristine ng-valid" name="company" required="" type="text">
+                            <input class="form-control ng-untouched ng-pristine ng-valid" name="company" value="TBS Company" required="" type="text">
                             <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error" data-for="company" data-valmsg-for="company" id="company_validationMessage" role="alert" hidden="">
                                 <i class="fa fa-exclamation-triangle"></i> Required!
                             </span>
@@ -47,7 +47,7 @@
                             <span class="text-danger">*</span>
                         </div>
                         <div class="col-md-8">
-                            <input class="form-control ng-untouched ng-pristine ng-valid" name="lastName" required="" type="text">
+                            <input class="form-control ng-untouched ng-pristine ng-valid" name="lastName" value="Ngân" required="" type="text">
                             <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg field-validation-error" data-for="lastName" data-valmsg-for="lastName" id="lastname_validationMessage" role="alert" hidden="">
                                 <i class="fa fa-exclamation-triangle"></i> Required!
                             </span>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     Click
-                    <a class="btn-blue font-weight-bold" href="#/change-password/2">here</a> to Change Password
+                    <a class="btn-blue font-weight-bold" [routerLink]="['/changepass']">here</a> to Change Password
                 </div>
             </div>
             <hr>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-md-10">
                     <button class="btn" routerlink="/dashboard" type="button" tabindex="0">Back</button> &nbsp;
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-outline-primary" type="submit">Submit</button>
                 </div>
             </div>
         </div>
