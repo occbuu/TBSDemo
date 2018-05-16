@@ -6,9 +6,10 @@ import { RuleComponent } from './rule.component';
 import { PageHeaderModule } from './../../shared';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TreeviewModule } from 'ngx-treeview';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
-    imports: [CommonModule, RuleRoutingModule, PageHeaderModule,NgbModule.forRoot(),],
+    imports: [CommonModule, RuleRoutingModule, PageHeaderModule,NgbModule.forRoot(),ModalModule.forRoot()],
     declarations: [RuleComponent]
 })
 export class RuleModule {}
