@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { TreeviewItem, TreeviewConfig } from 'ngx-treeview';
-
+import { routerTransition } from '../../router.animations';
 
 @Component({
     selector: 'app-role',
     templateUrl: './role.component.html',
-    styleUrls: ['./role.component.scss']
+    styleUrls: ['./role.component.scss'],
+    animations: [routerTransition()]
 })
 export class RoleComponent implements OnInit {
     public items = new TreeviewItem({
