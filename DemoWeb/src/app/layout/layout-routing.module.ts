@@ -17,6 +17,7 @@ const routes: Routes = [
             { path: 'errrpt', loadChildren: './error-report/error-report.module#ErrorReportModule' },
             { path: 'addline', loadChildren: './line-new/line-new.module#LineNewModule' },
             { path: 'viewline', loadChildren: './line-view/line-view.module#LineViewModule' },
+            { path: 'linedetail', loadChildren: './line-detail/line-detail.module#LineDetailModule' },
             { path: 'rule', loadChildren: './rule/rule.module#RuleModule' },
             { path: 'ruledetail', loadChildren: './ruledetail/ruledetail.module#RuledetailModule' },
             { path: 'announce', loadChildren: './announce-template/announce-template.module#AnnounceTemplateModule' },

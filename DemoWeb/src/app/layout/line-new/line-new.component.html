@@ -10,12 +10,25 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group row">
+                        <label class="col-md-4 col-form-label" for="select">Line Code</label>
+                        <input type="text" name="name" class="col-md-8 form-control" placeholder="Enter Line code" />
+                    </div>
+                    <div class="form-group row">
                         <label class="col-md-4 col-form-label" for="select">Line name</label>
                         <input type="text" name="name" class="col-md-8 form-control" placeholder="Enter name" />
                     </div>
                     <div class="form-group row">
                         <label class="col-md-4 col-form-label" for="textarea-input">Line 's description</label>
                         <textarea rows="4" class="form-control col-md-8" placeholder="Content.."></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-4 col-form-label" for="select">Order ID</label>
+                        <select id="select" name="select" class="col-md-8 form-control">
+                                        <option value="0">Please select Order</option>
+                                        <option value="1">O011</option>
+                                        <option value="2">O0112</option>
+                                        <option value="3">O0113</option>
+                                      </select>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-4 col-form-label">Target Qty</label>
